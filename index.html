@@ -13,8 +13,8 @@
     <script src="js/parallax.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
-        new WOW().init();
-    </script>
+    new WOW().init();
+</script>
 
     <link href="fonts/Lato-Regular.ttf" rel="stylesheet" type="text/css">
     <link href="fonts/Raleway-Regular.ttf" rel="stylesheet" type="text/css">
@@ -71,8 +71,8 @@
 
               <div class="parallax-window" data-parallax="scroll" data-image-src="img/web1.jpeg">
 
-              <h1 class="wow fadeInLeft">Stuff we do</h1>
-              <h4 class="wow fadeInRight">We are willing to provide you services that can help your business be found online.</h4>
+                <h1 class="wow fadeInLeft">Stuff we do</h1>
+                <h4 class="wow fadeInRight">We are willing to provide you services that can help your business be found online.</h4>
 
               </div>
 
@@ -103,27 +103,24 @@
         <script src="js/jquery-1.12.0.min.js"></script>
 
         <script>
-        $(function () {
-            var $win = $(window);
+        $(function() {
+  var $win = $(window);
 
-            $win.scroll(function () {
-                if ($win.scrollTop() == 0){
-                    $('.logo').addClass('animated bounceInDown');
-                } else {
-                    $('.logo').removeClass('animated bounceInDown');
-                }
+  $win.scroll(function() {
+    if ($win.scrollTop() == 0) {
+      $(".logo").addClass("animated bounceInDown");
+    } else {
+      $(".logo").removeClass("animated bounceInDown");
+    }
 
-                if ($win.height() + $win.scrollTop()
-                        == $(document).height()) {
-                   $('.socialmedia').addClass('animated rubberBand');
-                }
-
-                else {
-                    $('.socialmedia').removeClass('animated rubberBand');
-                }
-            });
-        });
-    </script>
+    if ($win.height() + $win.scrollTop() == $(document).height()) {
+      $(".socialmedia").addClass("animated rubberBand");
+    } else {
+      $(".socialmedia").removeClass("animated rubberBand");
+    }
+  });
+});
+</script>
 
 </body>
 </html>
