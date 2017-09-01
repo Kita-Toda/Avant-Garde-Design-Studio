@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="js/main.js"></script>
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <link href="fonts/Lato-Regular.ttf" rel="stylesheet" type="text/css">
+    <link href="fonts/Raleway-Regular.ttf" rel="stylesheet" type="text/css">
+    <link href="fonts/TitilliumWeb-Regular.ttf" rel="stylesheet" type="text/css">
+
+    <title>Avant-Garde Design Studio</title>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <!--::before-->
+    <div class="container-fluid">
+        <!--::before-->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand" href="index.html"><img src="img/AvantGarde.png"></a> -->
+            <!-- ::after -->
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="packages.html">Packages</a></li>
+                <!--<li><a href="portfolio.html">Portfolio</a></li>-->
+                <!--<li><a href="#">Blog</a></li>-->
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br>
+<br>
+<br>
+
+<div class="logo">
+    <a href="index.html"><img src="img/AvantGarde.png" width="800" height="300" alt=""></a>
+</div>
+
+<header class="animated infinite pulse" >CONTACT US</header>
+
+<div class="contact">
+    <h1 class="wow tada">Mob: +61433092621</h1>
+    <h1 class="wow tada">E-mail: crm@avant-gardedesignstudio.agency</h1>
+    <h1 class="wow tada">Location:</h1>
+</div>
+    <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.351268801814!2d151.19816771587458!3d-33.88060608065296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae25c0a5c6cf%3A0xbed0e5b1e5839ac7!2s616+Harris+St%2C+Sydney+NSW+2007!5e0!3m2!1sen!2sau!4v1462709989262" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+        <br>
+<br>
+
+
+<!--        CONTACT FORM
+<form id="form" class="topBefore" action="#" method="POST">
+
+    <input id="name" type="text" for="name" placeholder="NAME">
+    <span id="name_validation" class="error_message"></span>
+
+    <input id="phone" type="text" for="phone" placeholder="MOBILE/PHONE">
+    <span id="email_validation" class="error_message"></span>
+
+    <textarea id="email/message" for="message" placeholder="EMAIL/MESSAGE"></textarea>
+    <span id="message_validation" class="error_message"></span>
+
+    <input id="submit" type="submit" value="Send email" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    </a>
+
+    <div class="collapse" id="collapseExample">
+        <div class="alert alert-success" role="alert">
+            Thanks for the message, We'll get back to you ASAP.
+        </div>
+    </div>
+</form>
+                                -->
+
+<div id="footer">
+
+    <ul class="copyright">
+        <li>© 2016 Designed by: <a href="http://www.avant-gardedesignstudio.agency"> Avant-Garde Design Studios </a> Images: <a href="http://unsplash.com"> Unsplash </a> All Rights Reserved. </li>
+    </ul>
+
+    <ul class="socialmedia">
+        <li><a href="https://www.facebook.com/avantgardedesignstudio.agency/"><img src="img/facebook_black.png" alt=""></a></li>
+            <li><a href="https://twitter.com/VANGUARDDESIGNS?lang=en"><img src="img/twitter_black.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/avantgardedesignstudio/"><img src="img/instagram_black.png" alt=""></a></li>
+            <li><a href="https://www.youtube.com/channel/UCQJSuvFoo88dfDuDZ-HuNCg"><img src="img/youtube_black.png" alt=""></a></li>
+            <li><a href="https://au.pinterest.com/calba03/"><img src="img/pinterest_black.png" alt=""></a></li>
+    </ul>
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-1.12.0.min.js"></script>
+
+<script>
+    $(function () {
+        var $win = $(window);
+
+        $win.scroll(function () {
+            if ($win.scrollTop() == 0){
+                $('.logo').addClass('animated bounceInDown');
+            } else {
+                $('.logo').removeClass('animated bounceInDown');
+            }
+
+            if ($win.height() + $win.scrollTop()
+                    == $(document).height()) {
+                $('.socialmedia').addClass('animated rubberBand');
+            }
+
+            else {
+                $('.socialmedia').removeClass('animated rubberBand');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
+
+

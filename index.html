@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="js/main.js"></script>
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <link href="fonts/Lato-Regular.ttf" rel="stylesheet" type="text/css">
+    <link href="fonts/Raleway-Regular.ttf" rel="stylesheet" type="text/css">
+    <link href="fonts/TitilliumWeb-Regular.ttf" rel="stylesheet" type="text/css">
+
+<title>Avant-Garde Design Studio</title>
+</head>
+<body>
+      <nav class="navbar navbar-default navbar-fixed-top">
+           <!--::before-->
+          <div class="container-fluid">
+              <!--::before-->
+              <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle Navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <!--<a class="navbar-brand" href="index.html"><img src="img/AvantGarde.png"></a> -->
+               <!-- ::after -->
+              </div>
+              <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="packages.html">Packages</a></li>
+                  <!--<li><a href="portfolio.html">Portfolio</a></li>-->
+                  <!--<li><a href="#">Blog</a></li>-->
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+        <br>
+        <br>
+        <br>
+
+        <div class="logo">
+          <a href="index.html"><img src="img/AvantGarde.png" width="800" height="300" alt=""></a>
+		</div>
+
+      <div class="content">
+
+              <div class="parallax-window" data-parallax="scroll" data-image-src="img/web2.jpeg">
+
+                  <h1 class="wow fadeInRight">What we do?</h1>
+                  <h4 class="wow fadeInLeft">We are a design studio that provides:</h4>
+                  <ul class="wow fadeInDownBig">
+                      <li><strong>Branding</strong></li>
+                      <li><strong>Websites</strong></li>
+                      <li><strong>Customer Relationship Management (CRM)</strong></li>
+                      <li><strong>Online Marketing Strategies</strong></li>
+                  </ul>
+
+              </div>
+
+              <div class="parallax-window" data-parallax="scroll" data-image-src="img/web1.jpeg">
+
+              <h1 class="wow fadeInLeft">Stuff we do</h1>
+              <h4 class="wow fadeInRight">We are willing to provide you services that can help your business be found online.</h4>
+
+              </div>
+
+              <div class="parallax-window" data-parallax="scroll" data-image-src="img/web4.jpeg">
+
+              <h1 class="wow fadeInUp">Our Mission & Values</h1>
+              <h4 class="wow fadeInDown">"Our mission is to help businesses ride the digital trend to success."</h4>
+              </div>
+
+          </div>
+
+    <div id="footer">
+
+        <ul class="copyright">
+            <li>© 2016 Designed by:<a href="http://www.avant-gardedesignstudio.agency"> Avant-Garde Design Studios </a> Images: <a href="http://unsplash.com"> Unsplash </a> All Rights Reserved. </li>
+        </ul>
+
+   		<ul class="socialmedia">
+            <li><a href="https://www.facebook.com/avantgardedesignstudio.agency/"><img src="img/facebook_black.png" alt=""></a></li>
+            <li><a href="https://twitter.com/VANGUARDDESIGNS?lang=en"><img src="img/twitter_black.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/avantgardedesignstudio/"><img src="img/instagram_black.png" alt=""></a></li>
+            <li><a href="https://www.youtube.com/channel/UCQJSuvFoo88dfDuDZ-HuNCg"><img src="img/youtube_black.png" alt=""></a></li>
+            <li><a href="https://au.pinterest.com/calba03/"><img src="img/pinterest_black.png" alt=""></a></li>
+        </ul>
+    </div>
+
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-1.12.0.min.js"></script>
+
+        <script>
+        $(function () {
+            var $win = $(window);
+
+            $win.scroll(function () {
+                if ($win.scrollTop() == 0){
+                    $('.logo').addClass('animated bounceInDown');
+                } else {
+                    $('.logo').removeClass('animated bounceInDown');
+                }
+
+                if ($win.height() + $win.scrollTop()
+                        == $(document).height()) {
+                   $('.socialmedia').addClass('animated rubberBand');
+                }
+
+                else {
+                    $('.socialmedia').removeClass('animated rubberBand');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
